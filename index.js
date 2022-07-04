@@ -6,11 +6,11 @@ const app = express()
 const port = 80
 
 // add router in express app
-app.use("/",router);
 app.use(bodyParser.urlencoded({
     extended: false
 }))
 app.use(bodyParser.json())
+app.use("/",router);
 
 
 router.get('/', (req, res) => {

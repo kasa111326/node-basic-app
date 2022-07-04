@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const router = express.Router();
 const app = express()
 const port = 80
-const bodyParser = require('body-parser');
 
 // add router in express app
 app.use("/",router);

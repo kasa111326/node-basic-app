@@ -3,10 +3,15 @@ const bodyParser = require("body-parser");
 
 const router = express.Router();
 const app = express()
-const port = 8000
+const port = 80
+const bodyParser = require('body-parser');
 
 // add router in express app
 app.use("/",router);
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
+app.use(bodyParser.json())
 
 
 router.get('/', (req, res) => {
